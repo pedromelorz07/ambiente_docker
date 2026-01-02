@@ -29,6 +29,6 @@ RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 ENV TURTLEBOT3_MODEL=burger
 RUN echo "export TURTLEBOT3_MODEL=burger" >> /root/.bashrc
 
-WORKDIR /root/workspace
+WORKDIR /root/ros_ws
 
 CMD ["/bin/bash"]

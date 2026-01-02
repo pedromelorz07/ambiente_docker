@@ -13,10 +13,10 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - /home/pedromelo/.Xauthority:/root/.Xauthority:rw
-      - ./workspace:/root/workspace:rw
+      - ./workspace:/root/ros_ws:rw
       - ./shared_folder:/root/shared_folder:rw
       # ./workspace/src:/root/workspace/src:rw    ->
-      - ./ros_packages:/root/workspace/src:rw
+      - ./ros_packages:/root/ros_ws/src:rw
       - ./launch_ws:/root/launch_ws:rw
     #network_mode: host
     privileged: true
